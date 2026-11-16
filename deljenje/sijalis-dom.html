@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="sl">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+<title>Sijalis</title>
+<!-- slika za deljenje strani dom, 1200x630; PNG izriše tools/izrisi_deljenje.py -->
+<link rel="stylesheet" href="../fonts.css">
+<style>
+  :root { --malina: #c2384f; --malina-temna: #9e2a3e; --papir: #f4f2ef; --list: #fbf7f1; --pesek: #ede3d5; --crnilo: #2e2230; --crnilo-mehko: #5c4a5e; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; }
+  body { width: 1200px; height: 630px; overflow: hidden; background: var(--papir); color: var(--crnilo); position: relative; }
+  .besedilo { position: absolute; left: 80px; top: 0; bottom: 0; width: 600px; display: flex; flex-direction: column; justify-content: center; }
+  .ime { font: 700 30px/1 "Bricolage Grotesque", sans-serif; color: var(--malina-temna); margin: 0 0 36px; }
+  h1 { font: 700 84px/1 "Bricolage Grotesque", sans-serif; letter-spacing: -0.025em; margin: 0; }
+  .vrstica { font: 400 28px/1.35 "Literata", serif; color: var(--crnilo-mehko); margin: 36px 0 0; max-width: 20ch; }
+  .crta { position: absolute; left: 80px; right: 560px; bottom: 56px; border-top: 1px solid rgba(46, 34, 48, .2); }
+  .plosca { position: absolute; right: 70px; top: 48px; width: 420px; height: 534px; }
+  .plosca svg { display: block; width: 100%; height: 100%; overflow: visible; }
+  .tla { fill: var(--list); }
+  .izbor { fill: var(--malina); opacity: .14; }
+  .pohistvo { fill: none; stroke: var(--crnilo); stroke-width: 1.5; stroke-linejoin: round; }
+  .izbran .pohistvo { stroke: var(--malina-temna); }
+  text { font: 600 13px "Bricolage Grotesque", sans-serif; fill: var(--crnilo); }
+  .izbran text { fill: var(--malina-temna); }
+  .stene { fill: none; stroke: var(--crnilo); stroke-width: 7; stroke-linecap: square; }
+  .stene-notri { fill: none; stroke: var(--list); stroke-width: 4; stroke-linecap: square; }
+  .kota { fill: none; stroke: var(--crnilo-mehko); stroke-width: 1; }
+  .okno { fill: none; stroke: var(--malina); stroke-width: 3; }
+</style>
+</head>
+<body>
+<div class="besedilo">
+  <p class="ime">Sijalis</p>
+  <h1>Čiščenje stanovanj v&nbsp;Mariboru</h1>
+  <p class="vrstica">Izberite prostore, ki jih želite očistiti</p>
+</div>
+<div class="crta"></div>
+<div class="plosca">
+  <svg viewBox="-40 -40 380 480">
+    <rect x="-30" y="-30" width="364" height="464" rx="2" fill="#2e2230" opacity=".06" transform="translate(6 8)"/>
+    <rect x="-30" y="-30" width="364" height="464" rx="2" fill="#fbf7f1" stroke="#d9cdbd" stroke-width="1"/>
+    <g><rect class="tla" x="10" y="10" width="180" height="160"/><path class="pohistvo" d="M30 120h90v30H30zM30 120v-14h90v14M140 60h30v60h-30z"/><text x="30" y="40">Dnevna soba</text></g>
+    <g class="izbran"><rect class="tla" x="190" y="10" width="100" height="160"/><rect class="izbor" x="190" y="10" width="100" height="160"/><path class="pohistvo" d="M262 30h20v120h-20z"/><circle class="pohistvo" cx="272" cy="58" r="6"/><circle class="pohistvo" cx="272" cy="78" r="6"/><text x="202" y="40">Kuhinja</text></g>
+    <g><rect class="tla" x="10" y="170" width="280" height="60"/><path class="pohistvo" d="M232 178h50v14h-50z"/><text x="30" y="206">Hodnik</text></g>
+    <g><rect class="tla" x="10" y="230" width="180" height="160"/><path class="pohistvo" d="M60 300h90v80H60zM60 300h90v18H60zM34 362h20v20H34z"/><text x="30" y="262">Spalnica</text></g>
+    <g class="izbran"><rect class="tla" x="190" y="230" width="100" height="160"/><rect class="izbor" x="190" y="230" width="100" height="160"/><rect class="pohistvo" x="246" y="300" width="36" height="80" rx="14"/><circle class="pohistvo" cx="214" cy="366" r="12"/><text x="202" y="262">Kopalnica</text></g>
+    <path class="stene" d="M10 10h280v380H10zM190 10v62M190 102v68M10 170h40M80 170h110M190 170h100M10 230h110M150 230h40M190 230v160M220 230h70"/>
+    <path class="stene-notri" d="M10 10h280v380H10zM190 10v62M190 102v68M10 170h40M80 170h110M190 170h100M10 230h110M150 230h40M190 230v160M220 230h70"/>
+    <path class="kota" d="M10 -12H290M-12 10V390M10 2V-18M190 2V-18M290 2V-18M2 10H-18M2 170H-18M2 230H-18M2 390H-18M6 -8l8-8M186 -8l8-8M286 -8l8-8M-16 14l8-8M-16 174l8-8M-16 234l8-8M-16 394l8-8"/>
+    <path class="okno" d="M210 10h60M290 70v60"/>
+  </svg>
+</div>
+</body>
+</html>

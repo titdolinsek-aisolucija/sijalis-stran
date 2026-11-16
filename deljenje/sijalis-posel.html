@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="sl">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+<title>Sijalis</title>
+<!-- slika za deljenje strani poslovni prostori, 1200x630; PNG izriše tools/izrisi_deljenje.py -->
+<link rel="stylesheet" href="../fonts.css">
+<style>
+  :root { --mornar: #14213d; --led: #f3f6f8; --led-mehko: #b9c5d3; --turkiz: #3fd0c2; --crta-temna: rgba(243, 246, 248, .45); }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; }
+  body { width: 1200px; height: 630px; overflow: hidden; background: var(--mornar); color: var(--led); position: relative; font-family: "IBM Plex Sans", sans-serif; }
+  .besedilo { position: absolute; left: 80px; top: 0; bottom: 0; width: 560px; display: flex; flex-direction: column; justify-content: center; }
+  .ime { font: 600 30px/1 "IBM Plex Sans", sans-serif; color: var(--turkiz); margin: 0 0 36px; }
+  h1 { font: 600 70px/1.04 "IBM Plex Sans", sans-serif; letter-spacing: -0.02em; margin: 0; }
+  .vrstica { font: 400 28px/1.35 "IBM Plex Sans", sans-serif; color: var(--led-mehko); margin: 36px 0 0; }
+  .urnik { position: absolute; right: 80px; top: 92px; width: 420px; height: 446px; }
+  .urnik svg { display: block; width: 100%; height: 100%; }
+  .dan { font: 600 18px "IBM Plex Sans", sans-serif; fill: var(--led); text-anchor: middle; }
+  .vrsta { stroke: rgba(243, 246, 248, .12); stroke-width: 1; }
+  .prost { fill: none; stroke: var(--crta-temna); stroke-width: 1.5; }
+  .vikend { stroke-dasharray: 6 6; }
+  .izbran { fill: var(--turkiz); }
+</style>
+</head>
+<body>
+<div class="besedilo">
+  <p class="ime">Sijalis</p>
+  <h1>Čiščenje poslovnih prostorov v&nbsp;Mariboru</h1>
+  <p class="vrstica">Pisarne, stopnišča in skupni prostori</p>
+</div>
+<div class="urnik">
+  <svg viewBox="0 0 420 446">
+    <path class="vrsta" d="M0 46H420M0 126H420M0 206H420M0 286H420M0 366H420M0 446H420"/>
+    <text class="dan" x="30" y="24">Pon</text><text class="dan" x="90" y="24">Tor</text><text class="dan" x="150" y="24">Sre</text><text class="dan" x="210" y="24">Čet</text><text class="dan" x="270" y="24">Pet</text><text class="dan" x="330" y="24">Sob</text><text class="dan" x="390" y="24">Ned</text>
+    <rect class="prost" x="10" y="56" width="40" height="380" rx="4"/>
+    <rect class="izbran" x="70" y="56" width="40" height="380" rx="4"/>
+    <rect class="prost" x="130" y="56" width="40" height="380" rx="4"/>
+    <rect class="izbran" x="190" y="56" width="40" height="380" rx="4"/>
+    <rect class="prost" x="250" y="56" width="40" height="380" rx="4"/>
+    <rect class="prost vikend" x="310" y="56" width="40" height="380" rx="4"/>
+    <rect class="prost vikend" x="370" y="56" width="40" height="380" rx="4"/>
+  </svg>
+</div>
+</body>
+</html>

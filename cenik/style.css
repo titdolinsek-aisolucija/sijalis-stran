@@ -1,0 +1,13 @@
+/* cenik: vrstice kot na dom (storitve-sez), brez ikon */
+.cenik-stran .blok { padding-top: 48px; padding-bottom: 48px; max-width: 900px; }
+.cenik-stran .blok:first-child { padding-top: 56px; padding-bottom: 0; }
+.cenik-stran .uvod { margin-top: 20px; max-width: 60ch; }
+.cenik-stran .pod { margin-bottom: 8px; color: var(--crnilo-mehko); }
+.cenik-stran .pod a { color: var(--malina-temna); }
+.cenik-stran .drugi { margin-top: 56px; }
+.cenik-stran .storitve-sez li {
+  grid-template-columns: minmax(0, auto) minmax(20px, 1fr) auto;
+  grid-template-areas: "ime vodilo od" "opis opis opis";
+}
+.cenik-stran .storitve-sez .opis a { color: var(--malina-temna); }
+.cenik-stran .storitve-sez + .pod { margin-top: 20px; }

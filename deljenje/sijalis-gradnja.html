@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="sl">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+<title>Sijalis</title>
+<!-- slika za deljenje strani gradbišče, 1200x630; risba je iz ../gradbisce/index.html; PNG izriše tools/izrisi_deljenje.py -->
+<link rel="stylesheet" href="../fonts.css">
+<style>
+  :root { --grafit: #232628; --papir: #f4f3ef; --rumena: #f2b705; --meja: #77746d; --sivo: #4c5052; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; }
+  body { width: 1200px; height: 630px; overflow: hidden; background: var(--papir); color: var(--grafit); position: relative; font-family: "Barlow", sans-serif; }
+  body::before { content: ""; position: absolute; left: 0; right: 0; top: 0; height: 16px; background: repeating-linear-gradient(-45deg, var(--grafit) 0 14px, var(--rumena) 14px 28px); }
+  .besedilo { position: absolute; left: 64px; top: 16px; bottom: 0; width: 470px; display: flex; flex-direction: column; justify-content: center; }
+  .ime { font: 700 34px/1 "Barlow Condensed", sans-serif; margin: 0 0 28px; }
+  h1 { font: 700 62px/0.98 "Barlow Condensed", sans-serif; text-transform: uppercase; letter-spacing: 0.005em; margin: 0; }
+  .cena { align-self: flex-start; margin: 32px 0 0; padding: 10px 16px; background: var(--rumena); font: 600 26px/1.2 "Barlow", sans-serif; }
+  .okvir { position: absolute; left: 576px; top: 112px; width: 560px; }
+  .oznake { display: flex; justify-content: space-between; margin-bottom: 10px; font: 700 22px/1 "Barlow Condensed", sans-serif; }
+  .primerjava { position: relative; border: 3px solid var(--grafit); background: var(--papir); }
+  .risba { display: block; width: 100%; height: auto; }
+  .pred { position: absolute; inset: 0; height: 100%; clip-path: inset(0 42% 0 0); }
+  .crta-x { position: absolute; top: 0; bottom: 0; left: 58%; width: 3px; margin-left: -1.5px; background: var(--grafit); }
+  .rocaj { position: absolute; left: 58%; top: 50%; width: 44px; height: 44px; margin: -22px 0 0 -22px; border: 3px solid var(--grafit); background: var(--rumena); }
+  .rocaj svg { display: block; width: 24px; height: 24px; margin: 7px; fill: none; stroke: var(--grafit); stroke-width: 2.5; }
+  .risba .papir { fill: var(--papir); }
+  .risba .mreza { fill: url(#mreza); }
+  #mreza path { fill: none; stroke: #d9d6ce; stroke-width: 0.75; }
+  #srafura path { stroke: var(--grafit); stroke-width: 1.5; }
+  #prah circle { fill: #8f897d; }
+  .risba .tla { fill: url(#srafura); stroke: var(--grafit); stroke-width: 2; }
+  .risba .stena { fill: none; stroke: var(--grafit); stroke-width: 8; stroke-linejoin: miter; }
+  .risba .tanko { fill: none; stroke: var(--grafit); stroke-width: 2; }
+  .risba .kota { fill: none; stroke: var(--grafit); stroke-width: 1; }
+  .risba .kota-besedilo { font: 700 15px "Barlow Condensed", sans-serif; fill: var(--grafit); text-anchor: middle; }
+  .risba .sij { fill: none; stroke: var(--meja); stroke-width: 2; stroke-linecap: round; }
+  .pred .prah { fill: url(#prah); opacity: 0.75; }
+  .pred .trak { fill: none; stroke: #e3d39b; stroke-width: 11; opacity: 0.9; }
+  .pred .madez { fill: #d2cbbd; stroke: #a59f92; stroke-width: 1.5; }
+  .pred .lestev { fill: none; stroke: var(--grafit); stroke-width: 3; stroke-linecap: square; }
+  .pred .vedro { fill: #c8c1b2; stroke: var(--grafit); stroke-width: 2; stroke-linejoin: round; }
+  .pred .kup { fill: #b9b19f; stroke: var(--grafit); stroke-width: 1.5; }
+  .pred .drobir { fill: none; stroke: var(--grafit); stroke-width: 3; stroke-linecap: round; }
+</style>
+</head>
+<body>
+<div class="besedilo">
+  <p class="ime">Sijalis</p>
+  <h1>Čiščenje po prenovi in gradbenih delih v&nbsp;Mariboru</h1>
+  <p class="cena">Od 30&nbsp;€ na delovno uro</p>
+</div>
+<div class="okvir">
+  <div class="oznake"><span>Pred čiščenjem</span><span>Po čiščenju</span></div>
+  <div class="primerjava">
+    <svg class="risba po" viewBox="0 0 640 400">
+          <defs>
+            <pattern id="mreza" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M20 0H0V20"/></pattern>
+            <pattern id="srafura" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><path d="M0 0V8"/></pattern>
+            <pattern id="prah" width="14" height="14" patternUnits="userSpaceOnUse"><circle cx="3" cy="4" r="1.2"/><circle cx="10" cy="9" r="0.9"/><circle cx="6" cy="12" r="0.7"/></pattern>
+            <symbol id="osnova" viewBox="0 0 640 400">
+              <rect class="mreza" width="640" height="400"/>
+              <rect class="tla" x="40" y="330" width="560" height="14"/>
+              <path class="stena" d="M40 40H600V330H40Z"/>
+              <path class="tanko" d="M40 322H90M180 322H600"/>
+              <path class="tanko" d="M90 330V150H180V330M166 240h8"/>
+              <path class="tanko" d="M330 90H500V220H330ZM415 90V220M330 155H500M322 226H508"/>
+              <path class="tanko" d="M260 40V78M244 96L260 78L276 96Z"/>
+              <rect class="tanko" x="526" y="292" width="16" height="12"/>
+              <path class="kota" d="M40 372H600M40 364V380M600 364V380M36 376l8-8M596 376l8-8M624 40V330M616 40H632M616 330H632M620 44l8-8M620 334l8-8M330 22H500M330 14V30M500 14V30M326 26l8-8M496 26l8-8"/>
+              <text class="kota-besedilo" x="320" y="394">5,60</text>
+              <text class="kota-besedilo" x="415" y="16">1,70</text>
+              <text class="kota-besedilo" x="610" y="190" transform="rotate(90 610 190)">2,90</text>
+            </symbol>
+          </defs>
+          <rect class="papir" width="640" height="400"/>
+          <use href="#osnova"/>
+          <path class="sij" d="M346 140l20-20M352 148l30-30M432 210l18-18M440 214l10-10"/>
+        </svg>
+    <svg class="risba pred" viewBox="0 0 640 400">
+          <rect class="papir" width="640" height="400"/>
+          <use href="#osnova"/>
+          <rect class="prah" x="40" y="40" width="560" height="290"/>
+          <path class="trak" d="M336 96L494 214M494 96L336 214"/>
+          <path class="madez" d="M222 150c8-6 18-2 20 6 6 2 6 10 0 12-2 8-14 10-18 4-8 0-10-10-2-12-4-4-2-8 0-10zM548 112c6-4 14 0 14 6 4 4 0 10-6 8-6 4-12-2-10-6-4-2-2-8 2-8z"/>
+          <path class="lestev" d="M524 330L548 150L572 330M531 286h34M536 246h24M541 206h14"/>
+          <path class="vedro" d="M206 300h40l-4 30h-32zM212 300c0-12 28-12 28 0"/>
+          <path class="kup" d="M272 330c6-16 18-24 30-18 8-10 22-8 28 4 10-4 20 2 22 14zM420 330c4-10 12-14 20-10 6-6 14-4 18 4 6-2 12 2 12 6z"/>
+          <path class="drobir" d="M196 326h6M360 324h4M376 327h8M480 325h5M110 327h7M590 326h4"/>
+        </svg>
+    <span class="crta-x"></span>
+    <span class="rocaj"><svg viewBox="0 0 24 24"><path d="M9 6l-6 6 6 6M15 6l6 6-6 6"/></svg></span>
+  </div>
+</div>
+</body>
+</html>

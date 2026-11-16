@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="sl">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+<title>Sijalis</title>
+<!-- slika za deljenje vstopne strani, 1200x630; gumbi so iz ../vstop.css; PNG izriše tools/izrisi_deljenje.py -->
+<link rel="stylesheet" href="../fonts.css">
+<link rel="stylesheet" href="../vstop.css">
+<style>
+  body { width: 1200px; height: 630px; overflow: hidden; position: relative; }
+  .vrh { position: absolute; left: 80px; top: 56px; }
+  .ime { font: 700 30px/1 "Bricolage Grotesque", sans-serif; margin-bottom: 20px; }
+  .izbire { position: absolute; left: 80px; right: 80px; bottom: 56px; margin: 0; }
+  .izbira { min-height: 0; height: 316px; }
+  .izbira:hover { transform: none; }
+  .izbira .risba { max-width: 120px; margin: 12px 0; }
+</style>
+</head>
+<body>
+<div class="vrh">
+  <p class="ime">Sijalis</p>
+  <h1>Čiščenje v&nbsp;Mariboru in okolici</h1>
+</div>
+<div class="izbire">
+  <div class="izbira dom">
+    <h2>Dom</h2>
+    <p class="opis">Stanovanja in hiše</p>
+    <p class="cena">od 55&nbsp;€</p>
+    <svg class="risba" viewBox="0 0 120 100">
+      <rect x="6" y="6" width="108" height="88" rx="2"/>
+      <path d="M70 6v30M70 46v48M6 54h36M52 54h18M70 58h44"/>
+      <rect class="m" x="18" y="66" width="36" height="20" rx="2"/>
+      <rect x="84" y="66" width="20" height="22" rx="10"/>
+      <rect x="18" y="16" width="30" height="14" rx="2"/>
+    </svg>
+  </div>
+  <div class="izbira posel">
+    <h2>Poslovni prostori</h2>
+    <p class="opis">Pisarne, stopnišča in skupni prostori</p>
+    <p class="cena">po ponudbi</p>
+    <svg class="risba" viewBox="0 0 120 100">
+      <path d="M60 30l50 25-50 25-50-25z"/>
+      <path class="m" d="M38 52l22-11 22 11-22 11zM38 52v8M82 52v8M60 63v8"/>
+      <path d="M55 44V28l12-6v16z"/>
+      <path d="M24 46l12-6M84 66l12-6"/>
+    </svg>
+  </div>
+  <div class="izbira gradnja">
+    <h2>Gradbišče</h2>
+    <p class="opis">Po prenovi in gradbenih delih</p>
+    <p class="cena">od 30&nbsp;€ na uro</p>
+    <svg class="risba" viewBox="0 0 120 100">
+      <rect x="22" y="10" width="86" height="64"/>
+      <rect x="48" y="24" width="34" height="36"/>
+      <path d="M65 24v36M48 42h34"/>
+      <path d="M22 88h86M22 83v10M108 83v10M8 10v64M3 10h10M3 74h10"/>
+    </svg>
+  </div>
+</div>
+</body>
+</html>

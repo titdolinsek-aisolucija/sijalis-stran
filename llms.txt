@@ -1,0 +1,19 @@
+# Sijalis
+
+> Sijalis je čistilni servis iz Maribora (SIJALIS, Elisabel Selma Bertolini s.p., Betnavska cesta 2, 2000 Maribor). Čisti stanovanja in hiše, poslovne prostore ter prostore po prenovi ali gradbenih delih. Telefon 051 817 764.
+
+Območje: Maribor, Hoče, Miklavž na Dravskem polju, Rače in Slovenska Bistrica, drugje po dogovoru.
+
+Cene: čiščenje stanovanj in hiš v paketih, garsonjera do 30 m² od 55 €, hiša do 120 m² od 160 €; redno čiščenje od 22 € na uro, generalno čiščenje in čiščenje ob selitvi od 25 € na uro; čiščenje po prenovi ali gradbenih delih od 30 € na delovno uro, po predhodni oceni. Poslovni prostori, stopnišča in okna po ponudbi. Račun dobi vsaka stranka, plačilo z nakazilom na transakcijski račun.
+
+## Strani
+
+- [Vstopna stran](https://sijalis.si/): izbira med domom, poslovnimi prostori in gradbiščem, kontakt
+- [Čiščenje stanovanj in hiš](https://sijalis.si/dom/): paketi in cene, dodatki, storitve na uro, pogosta vprašanja
+- [Generalno čiščenje](https://sijalis.si/generalno-ciscenje/): enkratno temeljito čiščenje stanovanja ali hiše, od 25 € na delovno uro, dodatki in pogosta vprašanja
+- [Čiščenje ob selitvi](https://sijalis.si/ciscenje-po-selitvi/): čiščenje praznih prostorov pred vselitvijo ali po izselitvi, od 25 € na delovno uro
+- [Čiščenje oken](https://sijalis.si/ciscenje-oken/): stekla, okvirji in okenske police na varno dostopnih mestih, cena po ponudbi glede na mere, dostop in število oken
+- [Čiščenje poslovnih prostorov](https://sijalis.si/poslovni-prostori/): pisarne, stopnišča in skupni prostori, cena po ponudbi
+- [Čiščenje stopnišč](https://sijalis.si/ciscenje-stopnisc/): stopnišča in skupni prostori v stanovanjskih in poslovnih stavbah, enkrat ali redno, ponudba glede na obseg in pogostost
+- [Čiščenje po prenovi in gradbenih delih](https://sijalis.si/gradbisce/): od 30 € na delovno uro, ocena po fotografijah ali ogledu
+- [Cenik](https://sijalis.si/cenik/): vse cene na eni strani, paketi, dodatki, delo na uro, poslovni prostori in gradbišča

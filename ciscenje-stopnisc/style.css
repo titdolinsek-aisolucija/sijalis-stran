@@ -1,0 +1,5 @@
+/* stran stopnišč: videz poslovni-prostori, besedilo v enem stolpcu ob naslovu odseka */
+.besedilo p { max-width: 62ch; }
+.besedilo p + p { margin-top: 16px; }
+.besedilo .dopolni { color: var(--sivo); }
+.besedilo a, .noga a { color: var(--teal); }
